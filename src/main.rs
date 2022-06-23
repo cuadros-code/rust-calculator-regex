@@ -19,8 +19,8 @@ fn main() {
     let mut user_input = String::new();
     std::io::stdin().read_line(&mut user_input).unwrap();
 
-    user_input = math_operation(re_mult, user_input, Operations::MULTIPLY);
     user_input = math_operation(re_div, user_input, Operations::DIVIDE);
+    user_input = math_operation(re_mult, user_input, Operations::MULTIPLY);
     user_input = math_operation(re_add, user_input, Operations::ADDITION);
     user_input = math_operation(re_sub, user_input, Operations::SUBTRACT);
 
